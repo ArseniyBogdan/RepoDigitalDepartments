@@ -5,7 +5,7 @@ increase = 0.03  # Ежемесячный рост цен
 
 # TODO Рассчитайте подушку безопасности, чтобы протянуть 10 месяцев без долгов
 money = 0
-for i in range(months):
+for i in range(1, months + 1):
     if i != 1:
         spend *= (1 + increase)
     money -= spend - salary
